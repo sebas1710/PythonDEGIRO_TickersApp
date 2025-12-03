@@ -515,7 +515,7 @@ else:
 
 if st.button("4️⃣ Confirmar tickers y recalcular cotizaciones finales"):
     # 1) Procesar únicos
-    df_unicos_final = st.session_state.get("unicos_editor", df_unicos_edit)
+    df_unicos_final = df_unicos_edit  # <-- usamos directamente el DataFrame devuelto por data_editor
     final_rows = []
 
     for _, row in df_unicos_final.iterrows():
@@ -528,10 +528,9 @@ if st.button("4️⃣ Confirmar tickers y recalcular cotizaciones finales"):
 
     # 2) Procesar múltiples
     if not df_multi_edit.empty:
-        df_multi_final = st.session_state.get("multi_editor", df_multi_edit)
+        df_multi_final = df_multi_edit  # <-- idem, usamos el DF devuelto por el data_editor
 
         for isin, grp in df_multi_final.groupby("ISIN"):
-            # Filas marcadas
             sel = grp[grp["Seleccionado"] == True]
 
             final_ticker = None
@@ -543,7 +542,6 @@ if st.button("4️⃣ Confirmar tickers y recalcular cotizaciones finales"):
                 if not manual_nonempty.empty:
                     final_ticker = manual_nonempty["Ticker_Manual"].astype(str).str.strip().iloc[0]
                 else:
-                    # Sino, usamos el Yahoo_Ticker de la primera seleccionada
                     yt_nonempty = sel[sel["Yahoo_Ticker"].astype(str).str.strip() != ""]
                     if not yt_nonempty.empty:
                         final_ticker = yt_nonempty["Yahoo_Ticker"].astype(str).str.strip().iloc[0]
@@ -554,7 +552,6 @@ if st.button("4️⃣ Confirmar tickers y recalcular cotizaciones finales"):
                 if not candidates_nonempty.empty:
                     final_ticker = candidates_nonempty["Yahoo_Ticker"].astype(str).str.strip().iloc[0]
                 else:
-                    # Como última opción, si hay Ticker_Manual rellenado en la fila extra, usamos ese
                     manual_any = grp[grp["Ticker_Manual"].astype(str).str.strip() != ""]
                     if not manual_any.empty:
                         final_ticker = manual_any["Ticker_Manual"].astype(str).str.strip().iloc[0]
