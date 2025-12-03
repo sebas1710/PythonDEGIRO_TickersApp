@@ -7,3 +7,5 @@ yfinance
 datetime
 matplotlib
 plotly
+math
+requests
