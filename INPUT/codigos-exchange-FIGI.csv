@@ -1,0 +1,34 @@
+﻿exchCode;Exchange Name;País;Codigo Pais;Sufijo Yahoo;Disponible en DEGIRO;Notas
+SM;BME Spanish Exchanges (Bolsa de Madrid);España;🇪🇸;.MC;Sí;Acciones + ETFs
+BM;Barcelona/Valencia/Bilbao (regional);España;🇪🇸;.MA / .BI / .VB;Sí;Raro en FIGI, pero lo agrego
+LN;London Stock Exchange;Reino Unido;🇬🇧;.L;Sí;Muy común para ETFs irlandeses
+XLON;LSE Main Market;Reino Unido;🇬🇧;.L;Sí;Variante técnica
+DE;Deutsche Börse / Xetra;Alemania;🇩🇪;.DE;Sí;ETFs alemanes listan aquí
+XFRA;Frankfurt Stock Exchange;Alemania;🇩🇪;.F;Sí;Yahoo usa .F
+XETR;Xetra;Alemania;🇩🇪;.DE;Sí;Igual que arriba
+NA;Euronext Amsterdam;Países Bajos;🇳🇱;.AS;Sí;Muy común para ETFs
+ENXTAM;Euronext Amsterdam;Países Bajos;🇳🇱;.AS;Sí;Variante FIGI
+FP;Euronext Paris;Francia;🇫🇷;.PA;Sí;Acciones francesas
+ENXTPA;Euronext Paris;Francia;🇫🇷;.PA;Sí;Igual que FP
+LS;Euronext Lisboa;Portugal;🇵🇹;.LS;Sí;
+BR;Euronext Brussels;Bélgica;🇧🇪;.BR;Sí;
+IM;Borsa Italiana / Milan;Italia;🇮🇹;.MI;Sí;
+SW;SIX Swiss Exchange;Suiza;🇨🇭;.SW;Sí;Algunas acciones usan .VX
+VX;SIX Swiss (Yahoo variant);Suiza;🇨🇭;.VX;Sí;Yahoo usa .VX para algunas
+CO;Nasdaq Copenhagen;Dinamarca;🇩🇰;.CO;Sí;
+ST;Nasdaq Stockholm;Suecia;🇸🇪;.ST;Sí;
+HE;Nasdaq Helsinki;Finlandia;🇫🇮;.HE;Sí;
+OL;Oslo Børs;Noruega;🇳🇴;.OL;Sí;
+VI;Vienna Stock Exchange;Austria;🇦🇹;.VI;Sí;
+WA;Warsaw Stock Exchange;Polonia;🇵🇱;.WA;Sí;
+PR;Prague Stock Exchange;República Checa;🇨🇿;.PR;Sí;
+BD;Budapest Stock Exchange;Hungría;🇭🇺;.BD;Sí;
+US;Consolidated US (NYSE/NASDAQ);Estados Unidos;🇺🇸;;Sí;Es el más común
+NSQ;NASDAQ;Estados Unidos;🇺🇸;;Sí;
+NYS;NYSE;Estados Unidos;🇺🇸;;Sí;
+ARCA;NYSE Arca;Estados Unidos;🇺🇸;;Sí;ETFs de EEUU
+TO;Toronto Stock Exchange;Canadá;🇨🇦;.TO;Sí;
+V;TSX Venture;Canadá;🇨🇦;.V;Sí;
+HK;Hong Kong Stock Exchange;Hong Kong;🇭🇰;.HK;Sí;
+T;Tokyo Stock Exchange;Japón;🇯🇵;.T;Sí;
+AX;ASX Australia;Australia;🇦🇺;.AX;Sí;
