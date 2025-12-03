@@ -1,11 +1,8 @@
 pandas
 numpy
 streamlit
+yfinance
+requests
 matplotlib
 seaborn
-yfinance
-datetime
-matplotlib
 plotly
-math
-requests
